@@ -1,0 +1,24 @@
+NOVEXA Generals Mac — Install guide / دليل التثبيت
+=================================================
+
+ENGLISH
+1. Drag "NOVEXA Generals Mac" onto the Applications folder.
+2. Open the app from Applications. The first time, macOS says it could not verify the app
+   (it is not yet notarized by Apple). Click "Done", then open System Settings → Privacy & Security,
+   scroll down and click "Open Anyway" next to NOVEXA Generals Mac. Confirm with your password.
+   (Right-click → Open no longer bypasses this on current macOS.)
+3. In the launcher: Home → "Download from Steam" (your own copy), or "Locate…" your game folder.
+4. Press PLAY. For online play choose Online in the game and sign in with Discord.
+Requirements: Mac with Apple Silicon (M1 or newer), your own copy of C&C Generals / Zero Hour.
+
+العربية
+1. اسحب "NOVEXA Generals Mac" إلى مجلد Applications.
+2. افتح التطبيق من مجلد Applications. في المرة الأولى يقول macOS إنه لا يستطيع التحقق من التطبيق،
+   لأنه غير موثّق من Apple بعد. اضغط "Done"، ثم افتح إعدادات النظام ← الخصوصية والأمان،
+   وانزل للأسفل واضغط "Open Anyway" بجانب NOVEXA Generals Mac، وأكّد بكلمة سر جهازك. (مرة واحدة فقط.)
+3. في اللانشر: الرئيسية ← "Download from Steam" لتحميل نسختك، أو "Locate…" لاختيار مجلد اللعبة.
+4. اضغط PLAY. للعب أونلاين اختر Online داخل اللعبة وسجّل الدخول بـ Discord.
+المتطلبات: ماك بمعالج Apple Silicon (M1 أو أحدث)، ونسختك الخاصة من اللعبة.
+
+NOVEXA is not affiliated with Electronic Arts. Source code: https://github.com/OmaryaToo/novexa-generals-mac-source
+https://play.novexa-jo.com
