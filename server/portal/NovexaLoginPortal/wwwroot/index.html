@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-ar="NOVEXA Generals Online | زيرو آور أونلاين على الماك" data-en="NOVEXA Generals Online | Zero Hour online on your Mac">NOVEXA Generals Online | زيرو آور أونلاين على الماك</title>
+<meta name="description" content="Play Command &amp; Conquer: Generals – Zero Hour online, natively on your Mac, on the NOVEXA server. Download the launcher, sign in with Discord and join a lobby.">
+<meta name="theme-color" content="#F3F4F6">
+<meta property="og:title" content="NOVEXA Generals Online">
+<meta property="og:description" content="Zero Hour online on your Mac, on the NOVEXA server.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&family=IBM+Plex+Sans+Arabic:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=6">
+<link rel="stylesheet" href="/assets/play.css?v=6">
+</head>
+<body>
+<a class="skip" href="#main" data-ar="تخطَّ إلى المحتوى" data-en="Skip to content">تخطَّ إلى المحتوى</a>
+<header class="nav">
+	<div class="wrap">
+		<a href="/" class="logo" aria-label="NOVEXA Generals Online"><i></i>novexa<small>play</small></a>
+		<nav class="nav-links" id="navLinks" aria-label="main"><a href="/" aria-current="page" data-ar="الرئيسية" data-en="Home">الرئيسية</a><a href="/#how" data-ar="كيف تعمل" data-en="How it works">كيف تعمل</a><a href="/dashboard" data-ar="لوحة اللاعبين" data-en="Players">لوحة اللاعبين</a><a href="/download" data-ar="التحميل" data-en="Download">التحميل</a><a href="/#faq" data-ar="أسئلة" data-en="FAQ">أسئلة</a></nav>
+		<div class="nav-end">
+			<button class="lang" id="langToggle" type="button">ع</button>
+			<a class="btn btn-ink" href="/download" data-ar="حمّل اللانشر" data-en="Get the launcher">حمّل اللانشر</a>
+			<button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navLinks" data-aria-ar="القائمة" data-aria-en="Menu" aria-label="القائمة"><span></span><span></span></button>
+		</div>
+	</div>
+</header>
+<main id="main">
+
+<section class="hero">
+	<div class="wrap">
+		<span class="eyebrow">NOVEXA · Generals Online · macOS</span>
+		<h1 class="display"><span data-ar="زيرو آور" data-en="Zero Hour">زيرو آور</span><br><b data-ar="أونلاين على الماك" data-en="online on your Mac">أونلاين على الماك</b> <em data-ar="بلا محاكي." data-en="no emulator.">بلا محاكي.</em></h1>
+		<div class="hero-grid">
+			<div>
+				<p class="lead" data-ar="لانشر NOVEXA يشغّل اللعبة على ماك Apple Silicon بشكل أصلي، ويوصلك بسيرفرنا: لوبيات، مباريات مباشرة بين اللاعبين، وترتيب تنافسي. تسجّل دخولك بحساب Discord، وتستخدم نسختك الأصلية من اللعبة." data-en="The NOVEXA launcher runs the game natively on Apple Silicon Macs and connects you to our server: lobbies, direct player-to-player matches and a competitive ranking. You sign in with Discord and use your own copy of the game.">لانشر NOVEXA يشغّل اللعبة على ماك Apple Silicon بشكل أصلي، ويوصلك بسيرفرنا: لوبيات، مباريات مباشرة بين اللاعبين، وترتيب تنافسي. تسجّل دخولك بحساب Discord، وتستخدم نسختك الأصلية من اللعبة.</p>
+				<div class="hero-actions">
+					<a class="btn btn-ink" href="/download"><span data-ar="حمّل اللانشر" data-en="Download the launcher">حمّل اللانشر</span><svg class="flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+					<a class="btn btn-line" href="/dashboard"><span data-ar="شاهد لوحة اللاعبين" data-en="See the player board">شاهد لوحة اللاعبين</span></a>
+				</div>
+			</div>
+			<div class="board" aria-live="polite">
+				<div class="board-top"><span class="live" data-stat="status">…</span><span>play.novexa-jo.com</span></div>
+				<div class="board-big">
+					<div><b data-stat="players_online">—</b><span data-ar="لاعب متصل الآن" data-en="players online now">لاعب متصل الآن</span></div>
+					<div><b data-stat="lobbies">—</b><span data-ar="لوبي مفتوح" data-en="open lobbies">لوبي مفتوح</span></div>
+				</div>
+				<ul class="ledger-rows">
+					<li><span data-ar="لاعبون مسجّلون" data-en="Registered players">لاعبون مسجّلون</span><span class="mono" data-stat="registered">—</span></li>
+					<li><span data-ar="مباريات اليوم" data-en="Matches today">مباريات اليوم</span><span class="mono" data-stat="matches_today">—</span></li>
+					<li><span data-ar="الاتصال" data-en="Connection">الاتصال</span><span class="mono">TLS · Cloudflare</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="sec tight">
+	<div class="wrap">
+		<div class="stats rv">
+			<div><b data-stat="registered">—</b><span data-ar="لاعب مسجّل" data-en="registered players">لاعب مسجّل</span></div>
+			<div><b data-stat="matches_total">—</b><span data-ar="مباراة مكتملة" data-en="matches played">مباراة مكتملة</span></div>
+			<div><b data-stat="matches_today">—</b><span data-ar="مباراة اليوم" data-en="matches today">مباراة اليوم</span></div>
+			<div><b data-stat="new_players_week">—</b><span data-ar="لاعب جديد هذا الأسبوع" data-en="new players this week">لاعب جديد هذا الأسبوع</span></div>
+		</div>
+	</div>
+</section>
+
+<section class="sec" id="what">
+	<div class="wrap">
+		<div class="sec-head rv">
+			<div><span class="eyebrow">What you get</span><h2 class="h2"><span data-ar="اللعبة التي تعرفها،" data-en="The game you know,">اللعبة التي تعرفها،</span> <b data-ar="على جهازك." data-en="on your Mac.">على جهازك.</b></h2></div>
+			<p class="lead" data-ar="جزءان يعملان معاً: لانشر على الماك يشغّل اللعبة، وسيرفر أونلاين يجمع اللاعبين. كلاهما نديره بأنفسنا." data-en="Two parts working together: a Mac launcher that runs the game, and an online server that brings players together. We run both ourselves.">جزءان يعملان معاً: لانشر على الماك يشغّل اللعبة، وسيرفر أونلاين يجمع اللاعبين. كلاهما نديره بأنفسنا.</p>
+		</div>
+		<div class="split">
+			<article class="svc rv">
+				<span class="eyebrow">01 — The launcher</span>
+				<h3><span data-ar="لانشر الماك" data-en="Mac launcher">لانشر الماك</span></h3>
+				<p class="lead" data-ar="تطبيق ماك يكتشف ملفات لعبتك ويتحقق منها، ثم يشغّل محرّكاً مبنياً لمعالجات Apple Silicon مباشرة." data-en="A Mac app that finds and checks your game files, then runs an engine built directly for Apple Silicon.">تطبيق ماك يكتشف ملفات لعبتك ويتحقق منها، ثم يشغّل محرّكاً مبنياً لمعالجات Apple Silicon مباشرة.</p>
+				<ul class="incl"><li data-ar="أصلي على arm64، بلا Wine ولا Rosetta ولا آلة افتراضية" data-en="Native arm64, no Wine, no Rosetta, no virtual machine">أصلي على arm64، بلا Wine ولا Rosetta ولا آلة افتراضية</li><li data-ar="الرسوميات عبر Vulkan و Metal" data-en="Graphics through Vulkan and Metal">الرسوميات عبر Vulkan و Metal</li><li data-ar="يدعم Zero Hour" data-en="Supports Zero Hour">يدعم Zero Hour</li><li data-ar="إدارة المودات والنسخ الاحتياطي والتشخيص" data-en="Mods, backups and diagnostics">إدارة المودات والنسخ الاحتياطي والتشخيص</li></ul>
+				<a class="btn btn-ink" href="/download"><span data-ar="حمّل اللانشر" data-en="Download">حمّل اللانشر</span><svg class="flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+			</article>
+			<article class="svc dark rv">
+				<span class="eyebrow">02 — The server</span>
+				<h3><span data-ar="سيرفر أونلاين" data-en="Online server">سيرفر أونلاين</span></h3>
+				<p class="lead" data-ar="سيرفر NOVEXA يدير الحسابات واللوبيات والمطابقة، ويسجّل نتائج المباريات في الترتيب." data-en="The NOVEXA server handles accounts, lobbies and matchmaking, and records match results in the ranking.">سيرفر NOVEXA يدير الحسابات واللوبيات والمطابقة، ويسجّل نتائج المباريات في الترتيب.</p>
+				<ul class="incl"><li data-ar="دخول آمن بحساب Discord، بلا كلمات مرور جديدة" data-en="Secure Discord sign-in, no new passwords">دخول آمن بحساب Discord، بلا كلمات مرور جديدة</li><li data-ar="لوبيات مخصّصة ومطابقة تلقائية" data-en="Custom lobbies and automatic matchmaking">لوبيات مخصّصة ومطابقة تلقائية</li><li data-ar="المباراة نفسها تُلعب مباشرة بين أجهزة اللاعبين" data-en="Matches run directly between players’ machines">المباراة نفسها تُلعب مباشرة بين أجهزة اللاعبين</li><li data-ar="ترتيب ELO وسجل للمباريات" data-en="ELO ranking and match history">ترتيب ELO وسجل للمباريات</li></ul>
+				<a class="btn btn-line" href="/dashboard"><span data-ar="لوحة اللاعبين" data-en="Player board">لوحة اللاعبين</span><svg class="flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section class="sec" id="how">
+	<div class="wrap">
+		<div class="sec-head rv"><div><span class="eyebrow">How it works</span><h2 class="h2"><span data-ar="من التحميل إلى أول مباراة،" data-en="From download to your first match,">من التحميل إلى أول مباراة،</span> <b data-ar="في خمس خطوات." data-en="in five steps.">في خمس خطوات.</b></h2></div></div>
+		<ol class="steps rv">
+			<li><h3 data-ar="حمّل اللانشر" data-en="Get the launcher">حمّل اللانشر</h3><p data-ar="نزّل التطبيق من صفحة التحميل وانقله إلى مجلد التطبيقات." data-en="Download the app and move it to Applications.">نزّل التطبيق من صفحة التحميل وانقله إلى مجلد التطبيقات.</p></li>
+			<li><h3 data-ar="اربط لعبتك" data-en="Add your game">اربط لعبتك</h3><p data-ar="اختر مجلد نسختك من Zero Hour، ويتحقق اللانشر من الملفات." data-en="Point it to your Zero Hour folder; the launcher checks the files.">اختر مجلد نسختك من Zero Hour، ويتحقق اللانشر من الملفات.</p></li>
+			<li><h3 data-ar="اختر أونلاين" data-en="Choose Online">اختر أونلاين</h3><p data-ar="شغّل اللعبة من اللانشر واختر Online. اللانشر يتصل بسيرفر NOVEXA تلقائياً، بلا أي إعداد." data-en="Start the game from the launcher and choose Online. The launcher connects to the NOVEXA server automatically, no setup needed.">شغّل اللعبة من اللانشر واختر Online. اللانشر يتصل بسيرفر NOVEXA تلقائياً، بلا أي إعداد.</p></li>
+			<li><h3 data-ar="سجّل بـ Discord" data-en="Sign in with Discord">سجّل بـ Discord</h3><p data-ar="عند الدخول أونلاين يفتح المتصفح صفحة Discord. توافق، ثم ترجع للعبة." data-en="Going online opens Discord in your browser. Approve, then return to the game.">عند الدخول أونلاين يفتح المتصفح صفحة Discord. توافق، ثم ترجع للعبة.</p></li>
+			<li><h3 data-ar="العب" data-en="Play">العب</h3><p data-ar="ادخل لوبي أو أنشئ واحداً، وابدأ المباراة. النتيجة تُسجَّل في ترتيبك." data-en="Join or create a lobby and start. The result counts toward your rank.">ادخل لوبي أو أنشئ واحداً، وابدأ المباراة. النتيجة تُسجَّل في ترتيبك.</p></li>
+		</ol>
+	</div>
+</section>
+
+<section class="sec" id="specs">
+	<div class="wrap">
+		<div class="sec-head rv"><div><span class="eyebrow">Requirements</span><h2 class="h2"><span data-ar="ما الذي" data-en="What you">ما الذي</span> <b data-ar="تحتاجه." data-en="need.">تحتاجه.</b></h2></div>
+		<p class="lead" data-ar="بدون مفاجآت: هذه كل المتطلبات." data-en="No surprises: this is everything you need.">بدون مفاجآت: هذه كل المتطلبات.</p></div>
+		<dl class="spec rv">
+			<div class="spec-row"><dt>Mac</dt><dd data-ar="ماك بمعالج Apple Silicon (M1 أو أحدث)." data-en="A Mac with Apple Silicon (M1 or newer).">ماك بمعالج Apple Silicon (M1 أو أحدث).</dd></div>
+			<div class="spec-row"><dt>Game files</dt><dd data-ar="نسختك الأصلية من Zero Hour (Steam أو EA App أو The First Decade أو نسخة القرص). لا نوفّر ملفات اللعبة." data-en="Your own copy of Zero Hour (Steam, EA App, The First Decade or retail). We don’t provide game files.">نسختك الأصلية من Zero Hour (Steam أو EA App أو The First Decade أو نسخة القرص). لا نوفّر ملفات اللعبة.</dd></div>
+			<div class="spec-row"><dt>Account</dt><dd data-ar="حساب Discord لتسجيل الدخول. نقرأ اسم المستخدم والمعرّف فقط." data-en="A Discord account to sign in. We only read your username and ID.">حساب Discord لتسجيل الدخول. نقرأ اسم المستخدم والمعرّف فقط.</dd></div>
+			<div class="spec-row"><dt>Network</dt><dd data-ar="اتصال إنترنت مستقر. المباريات تُلعب مباشرة بين الأجهزة، فالاتصال الجيد يعني لعباً أنعم." data-en="A stable connection. Matches run directly between machines, so a good connection means smoother play.">اتصال إنترنت مستقر. المباريات تُلعب مباشرة بين الأجهزة، فالاتصال الجيد يعني لعباً أنعم.</dd></div>
+		</dl>
+	</div>
+</section>
+
+<section class="sec" id="faq">
+	<div class="wrap">
+		<div class="sec-head rv"><div><span class="eyebrow">Questions</span><h2 class="h2"><span data-ar="أسئلة" data-en="Common">أسئلة</span> <b data-ar="شائعة." data-en="questions.">شائعة.</b></h2></div></div>
+		<div class="faq rv">
+			<details><summary><span data-ar="هل الخدمة مجانية؟" data-en="Is it free?">هل الخدمة مجانية؟</span></summary><p data-ar="نعم. اللانشر والسيرفر مجانيان. تحتاج فقط نسختك الخاصة من اللعبة." data-en="Yes. The launcher and the server are free. You only need your own copy of the game.">نعم. اللانشر والسيرفر مجانيان. تحتاج فقط نسختك الخاصة من اللعبة.</p></details>
+			<details><summary><span data-ar="هل تعمل على ماك Intel؟" data-en="Does it work on Intel Macs?">هل تعمل على ماك Intel؟</span></summary><p data-ar="لا حالياً. المحرّك مبني لمعالجات Apple Silicon فقط." data-en="Not at the moment. The engine is built for Apple Silicon only.">لا حالياً. المحرّك مبني لمعالجات Apple Silicon فقط.</p></details>
+			<details><summary><span data-ar="هل أستطيع اللعب مع لاعبين على ويندوز؟" data-en="Can I play with Windows players?">هل أستطيع اللعب مع لاعبين على ويندوز؟</span></summary><p data-ar="السيرفر مخصّص للاعبي لانشر NOVEXA. اللعب مع عملاء آخرين غير مضمون حالياً." data-en="The server is meant for NOVEXA launcher players. Playing with other clients isn’t guaranteed at the moment.">السيرفر مخصّص للاعبي لانشر NOVEXA. اللعب مع عملاء آخرين غير مضمون حالياً.</p></details>
+			<details><summary><span data-ar="لماذا Discord؟" data-en="Why Discord?">لماذا Discord؟</span></summary><p data-ar="حتى لا تنشئ كلمة مرور جديدة، ولنحمي اللوبيات من الحسابات الوهمية. لا نرى كلمة مرورك ولا رسائلك." data-en="So you don’t need a new password, and to keep fake accounts out of lobbies. We never see your password or messages.">حتى لا تنشئ كلمة مرور جديدة، ولنحمي اللوبيات من الحسابات الوهمية. لا نرى كلمة مرورك ولا رسائلك.</p></details>
+			<details><summary><span data-ar="هل أحتاج لضبط السيرفر بنفسي؟" data-en="Do I need to set up the server?">هل أحتاج لضبط السيرفر بنفسي؟</span></summary><p data-ar="لا. اللانشر يتصل بسيرفر NOVEXA تلقائياً. تختار Online من اللعبة فقط." data-en="No. The launcher connects to the NOVEXA server automatically. You just choose Online in the game.">لا. اللانشر يتصل بسيرفر NOVEXA تلقائياً. تختار Online من اللعبة فقط.</p></details>
+			<details><summary><span data-ar="لماذا لم يفتح Discord هذه المرة؟" data-en="Why didn’t Discord open this time?">لماذا لم يفتح Discord هذه المرة؟</span></summary><p data-ar="لأنك سجّلت دخولك من قبل. اللعبة تحفظ جلستك لمدة 30 يوماً، فتدخل مباشرة دون أن تفتح Discord من جديد." data-en="Because you signed in before. The game keeps your session for 30 days, so you go straight in without opening Discord again.">لأنك سجّلت دخولك من قبل. اللعبة تحفظ جلستك لمدة 30 يوماً، فتدخل مباشرة دون أن تفتح Discord من جديد.</p></details>
+		</div>
+	</div>
+</section>
+
+<section class="cta">
+	<div class="wrap rv">
+		<span class="eyebrow">Ready</span>
+		<h2 class="h2"><span data-ar="اللوبي" data-en="The lobby">اللوبي</span> <b data-ar="بانتظارك." data-en="is waiting.">بانتظارك.</b></h2>
+		<div class="hero-actions">
+			<a class="btn btn-ink" href="/download"><span data-ar="حمّل اللانشر" data-en="Download the launcher">حمّل اللانشر</span></a>
+			<a class="btn btn-line" href="/dashboard"><span data-ar="لوحة اللاعبين" data-en="Player board">لوحة اللاعبين</span></a>
+		</div>
+	</div>
+</section>
+</main>
+<footer class="foot">
+	<div class="wrap">
+		<div class="foot-grid">
+			<div><a href="/" class="logo"><i></i>novexa<small>play</small></a><p><span data-ar="زيرو آور أونلاين على الماك، على سيرفر NOVEXA." data-en="Zero Hour online on the Mac, on NOVEXA servers.">زيرو آور أونلاين على الماك، على سيرفر NOVEXA.</span></p></div>
+			<div><h4>Play</h4><ul><li><a href="/download"><span data-ar="التحميل" data-en="Download">التحميل</span></a></li><li><a href="/dashboard"><span data-ar="لوحة اللاعبين" data-en="Players">لوحة اللاعبين</span></a></li><li><a href="/#how"><span data-ar="كيف تعمل" data-en="How it works">كيف تعمل</span></a></li></ul></div>
+			<div><h4>Project</h4><ul><li><a href="https://github.com/OmaryaToo/novexa-generals-mac-source">GitHub</a></li><li><a href="/#faq"><span data-ar="أسئلة شائعة" data-en="FAQ">أسئلة شائعة</span></a></li></ul></div>
+			<div><h4>Novexa</h4><ul><li><a href="https://novexa-jo.com">novexa-jo.com</a></li><li><a class="mono" href="mailto:info@novexa-jo.com">info@novexa-jo.com</a></li></ul></div>
+		</div>
+		<p class="legal" data-ar="مشروع مجتمعي غير تابع لشركة Electronic Arts ولا معتمد منها. Command &amp; Conquer علامة تجارية لـ Electronic Arts Inc. المحرّك مبني على الشيفرة المصدرية التي أصدرتها EA بترخيص GPL-3.0." data-en="A community project, not affiliated with or endorsed by Electronic Arts. Command &amp; Conquer is a trademark of Electronic Arts Inc. The engine is built on EA’s GPL-3.0 source release.">مشروع مجتمعي غير تابع لشركة Electronic Arts ولا معتمد منها. Command &amp; Conquer علامة تجارية لـ Electronic Arts Inc. المحرّك مبني على الشيفرة المصدرية التي أصدرتها EA بترخيص GPL-3.0.</p>
+		<div class="foot-base"><span>© <span id="year">2026</span> Novexa</span><span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span></div>
+	</div>
+</footer>
+<script src="/assets/play.js?v=6" defer></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-ar="لوحة اللاعبين | NOVEXA Generals Online" data-en="Players | NOVEXA Generals Online">لوحة اللاعبين | NOVEXA Generals Online</title>
+<meta name="description" content="العب Command &amp; Conquer: Zero Hour أونلاين على الماك بشكل أصلي، على سيرفر NOVEXA. حمّل اللانشر، سجّل دخولك بحساب Discord، وادخل اللوبي.">
+<meta name="theme-color" content="#F3F4F6">
+<meta property="og:title" content="NOVEXA Generals Online">
+<meta property="og:description" content="Zero Hour أونلاين على الماك، على سيرفر NOVEXA.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&family=IBM+Plex+Sans+Arabic:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=6">
+<link rel="stylesheet" href="/assets/play.css?v=6">
+</head>
+<body>
+<a class="skip" href="#main" data-ar="تخطَّ إلى المحتوى" data-en="Skip to content">تخطَّ إلى المحتوى</a>
+<header class="nav">
+	<div class="wrap">
+		<a href="/" class="logo" aria-label="NOVEXA Generals Online"><i></i>novexa<small>play</small></a>
+		<nav class="nav-links" id="navLinks" aria-label="main"><a href="/" data-ar="الرئيسية" data-en="Home">الرئيسية</a><a href="/#how" data-ar="كيف تعمل" data-en="How it works">كيف تعمل</a><a href="/dashboard" aria-current="page" data-ar="لوحة اللاعبين" data-en="Players">لوحة اللاعبين</a><a href="/download" data-ar="التحميل" data-en="Download">التحميل</a><a href="/#faq" data-ar="أسئلة" data-en="FAQ">أسئلة</a></nav>
+		<div class="nav-end">
+			<button class="lang" id="langToggle" type="button">ع</button>
+			<a class="btn btn-ink" href="/download" data-ar="حمّل اللانشر" data-en="Get the launcher">حمّل اللانشر</a>
+			<button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navLinks" data-aria-ar="القائمة" data-aria-en="Menu" aria-label="القائمة"><span></span><span></span></button>
+		</div>
+	</div>
+</header>
+<main id="main">
+<section class="page-hero">
+	<div class="wrap">
+		<span class="eyebrow">Player board · live</span>
+		<h1 class="display"><span data-ar="لوحة" data-en="The player">لوحة</span> <b data-ar="اللاعبين." data-en="board.">اللاعبين.</b></h1>
+		<p class="lead" data-ar="من متصل الآن، من يتصدر الترتيب، وآخر المباريات على سيرفر NOVEXA. تتحدّث تلقائياً." data-en="Who is online, who leads the ranking, and the latest matches on the NOVEXA server. Updates automatically.">من متصل الآن، من يتصدر الترتيب، وآخر المباريات على سيرفر NOVEXA. تتحدّث تلقائياً.</p>
+	</div>
+</section>
+<section class="sec tight">
+	<div class="wrap">
+		<div class="board rv" style="margin-bottom:16px">
+			<div class="board-top"><span class="live" data-stat="status">…</span><span>play.novexa-jo.com</span></div>
+		</div>
+		<div class="stats rv">
+			<div><b data-stat="players_online">—</b><span data-ar="متصل الآن" data-en="online now">متصل الآن</span></div>
+			<div><b data-stat="lobbies">—</b><span data-ar="لوبي مفتوح" data-en="open lobbies">لوبي مفتوح</span></div>
+			<div><b data-stat="registered">—</b><span data-ar="لاعب مسجّل" data-en="registered players">لاعب مسجّل</span></div>
+			<div><b data-stat="matches_total">—</b><span data-ar="مباراة مكتملة" data-en="matches played">مباراة مكتملة</span></div>
+		</div>
+	</div>
+</section>
+<section class="sec tight" id="ranking">
+	<div class="wrap">
+		<div class="sec-head rv"><div><span class="eyebrow">Ranking · ELO</span><h2 class="h2"><span data-ar="الترتيب" data-en="The">الترتيب</span> <b data-ar="العام." data-en="ranking.">العام.</b></h2></div>
+		<p class="lead" data-ar="يرتفع تقييم ELO مع كل فوز في المباريات المحتسبة. الفوز والخسارة لهذه السنة." data-en="ELO rises with every win in rated matches. Wins and losses are for this year.">يرتفع تقييم ELO مع كل فوز في المباريات المحتسبة. الفوز والخسارة لهذه السنة.</p></div>
+		<div class="tbl-wrap rv">
+			<table class="tbl">
+				<thead><tr><th>#</th><th data-ar="اللاعب" data-en="Player">اللاعب</th><th>ELO</th><th data-ar="فوز / خسارة" data-en="W / L">فوز / خسارة</th><th data-ar="نسبة الفوز" data-en="Win rate">نسبة الفوز</th><th data-ar="آخر مباراة" data-en="Last match">آخر مباراة</th></tr></thead>
+				<tbody id="leaderboard"><tr><td colspan="6" class="empty">…</td></tr></tbody>
+			</table>
+		</div>
+	</div>
+</section>
+<section class="sec" id="matches">
+	<div class="wrap">
+		<div class="sec-head rv"><div><span class="eyebrow">Recent matches</span><h2 class="h2"><span data-ar="آخر" data-en="Latest">آخر</span> <b data-ar="المباريات." data-en="matches.">المباريات.</b></h2></div></div>
+		<div class="tbl-wrap rv">
+			<table class="tbl">
+				<thead><tr><th data-ar="المباراة" data-en="Match">المباراة</th><th data-ar="الخريطة" data-en="Map">الخريطة</th><th data-ar="اللاعبون" data-en="Players">اللاعبون</th><th data-ar="المدة" data-en="Length">المدة</th><th data-ar="متى" data-en="When">متى</th></tr></thead>
+				<tbody id="recentMatches"><tr><td colspan="5" class="empty">…</td></tr></tbody>
+			</table>
+		</div>
+	</div>
+</section>
+</main>
+<footer class="foot">
+	<div class="wrap">
+		<div class="foot-grid">
+			<div><a href="/" class="logo"><i></i>novexa<small>play</small></a><p><span data-ar="زيرو آور أونلاين على الماك، على سيرفر NOVEXA." data-en="Zero Hour online on the Mac, on NOVEXA servers.">زيرو آور أونلاين على الماك، على سيرفر NOVEXA.</span></p></div>
+			<div><h4>Play</h4><ul><li><a href="/download"><span data-ar="التحميل" data-en="Download">التحميل</span></a></li><li><a href="/dashboard"><span data-ar="لوحة اللاعبين" data-en="Players">لوحة اللاعبين</span></a></li><li><a href="/#how"><span data-ar="كيف تعمل" data-en="How it works">كيف تعمل</span></a></li></ul></div>
+			<div><h4>Project</h4><ul><li><a href="https://github.com/OmaryaToo/novexa-generals-mac-source">GitHub</a></li><li><a href="/#faq"><span data-ar="أسئلة شائعة" data-en="FAQ">أسئلة شائعة</span></a></li></ul></div>
+			<div><h4>Novexa</h4><ul><li><a href="https://novexa-jo.com">novexa-jo.com</a></li><li><a class="mono" href="mailto:info@novexa-jo.com">info@novexa-jo.com</a></li></ul></div>
+		</div>
+		<p class="legal" data-ar="مشروع مجتمعي غير تابع لشركة Electronic Arts ولا معتمد منها. Command &amp; Conquer علامة تجارية لـ Electronic Arts Inc. المحرّك مبني على الشيفرة المصدرية التي أصدرتها EA بترخيص GPL-3.0." data-en="A community project, not affiliated with or endorsed by Electronic Arts. Command &amp; Conquer is a trademark of Electronic Arts Inc. The engine is built on EA’s GPL-3.0 source release.">مشروع مجتمعي غير تابع لشركة Electronic Arts ولا معتمد منها. Command &amp; Conquer علامة تجارية لـ Electronic Arts Inc. المحرّك مبني على الشيفرة المصدرية التي أصدرتها EA بترخيص GPL-3.0.</p>
+		<div class="foot-base"><span>© <span id="year">2026</span> Novexa</span><span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span></div>
+	</div>
+</footer>
+<script src="/assets/play.js?v=6" defer></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleIdentifier</key><string>com.novexa.generalsmac</string>
+  <key>CFBundleName</key><string>NOVEXA Generals Mac</string>
+  <key>CFBundleDisplayName</key><string>NOVEXA Generals Mac</string>
+  <key>CFBundleExecutable</key><string>NOVEXA Generals Mac</string>
+  <key>CFBundleIconFile</key><string>AppIcon</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>0.1.0</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>LSApplicationCategoryType</key><string>public.app-category.strategy-games</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSHumanReadableCopyright</key><string>© 2026 NOVEXA · GPL-3.0-or-later · Not affiliated with Electronic Arts</string>
+</dict></plist>

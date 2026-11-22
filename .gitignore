@@ -1,0 +1,22 @@
+# Build outputs
+build/
+build-*.out
+app/.build/
+app/.swiftpm/
+*.xcuserstate
+.DS_Store
+# Third-party checkouts restored by scripts (GeneralsX is a submodule)
+engine/deps/vcpkg/
+engine/upstream/GeneralsGameCode-macOS/
+# Never commit proprietary game data
+*.big
+*.BIG
+*.w3d
+*.tga
+*.dds
+*.bik
+*.wav
+*.mp3
+*.map
+*.str
+*.csf
