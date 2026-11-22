@@ -1,0 +1,130 @@
+diff --git a/Core/GameEngine/Source/Common/version.cpp b/Core/GameEngine/Source/Common/version.cpp
+index 331d24a..2f32566 100644
+--- a/Core/GameEngine/Source/Common/version.cpp
++++ b/Core/GameEngine/Source/Common/version.cpp
+@@ -322,8 +322,8 @@ UnicodeString Version::getUnicodeBuildUserOrGitCommitAuthorName() const
+ 
+ UnicodeString Version::getUnicodeProductTitle() const
+ {
+-	// @todo Make configurable
+-	return L"GeneralsX";
++	// NOVEXA @branding product title shown in-game (engine: GeneralsX, GPL-3.0)
++	return L"NOVEXA";
+ }
+ 
+ UnicodeString Version::getUnicodeProductVersion() const
+@@ -485,7 +485,8 @@ UnicodeString Version::getUnicodeProjectWatermark() const
+ 		snprintf(versionSuffix, sizeof(versionSuffix), " - %s", formattedTag);
+ 	}
+ 
+-	snprintf(finalCredit, sizeof(finalCredit), "GeneralsX - Cross Platform C&C Generals%s", versionSuffix);
++	// NOVEXA @branding main-menu credit line (engine: GeneralsX, GPL-3.0)
++	snprintf(finalCredit, sizeof(finalCredit), "NOVEXA \xC2\xB7 Powered by GeneralsX (GPL-3.0) \xC2\xB7 Not affiliated with EA \xC2\xB7 novexa-jo.com%s", versionSuffix);
+ 
+ 	UnicodeString watermark;
+ 	watermark.translate(finalCredit);
+diff --git a/Core/GameEngine/Source/GameClient/GameText.cpp b/Core/GameEngine/Source/GameClient/GameText.cpp
+index 2ef2fa1..09c9709 100644
+--- a/Core/GameEngine/Source/GameClient/GameText.cpp
++++ b/Core/GameEngine/Source/GameClient/GameText.cpp
+@@ -1483,7 +1483,7 @@ UnicodeString GameTextManager::fetch( const Char *label, Bool *exists )
+ 		{
+ 			if ( exists )
+ 				*exists = TRUE;
+-			static UnicodeString s_gxOptions(L"GENERALSX");
++			static UnicodeString s_gxOptions(L"NOVEXA"); // NOVEXA @branding
+ 			return s_gxOptions;
+ 		}
+ 
+@@ -1492,7 +1492,7 @@ UnicodeString GameTextManager::fetch( const Char *label, Bool *exists )
+ 		{
+ 			if ( exists )
+ 				*exists = TRUE;
+-			static UnicodeString s_gxTitle(L"GENERALSX OPTIONS");
++			static UnicodeString s_gxTitle(L"NOVEXA OPTIONS"); // NOVEXA @branding
+ 			return s_gxTitle;
+ 		}
+ 
+diff --git a/Core/GameEngineDevice/Source/W3DDevice/GameClient/GUI/GUICallbacks/W3DMainMenu.cpp b/Core/GameEngineDevice/Source/W3DDevice/GameClient/GUI/GUICallbacks/W3DMainMenu.cpp
+index 6f9e0af..85198b2 100644
+--- a/Core/GameEngineDevice/Source/W3DDevice/GameClient/GUI/GUICallbacks/W3DMainMenu.cpp
++++ b/Core/GameEngineDevice/Source/W3DDevice/GameClient/GUI/GUICallbacks/W3DMainMenu.cpp
+@@ -423,7 +423,7 @@ void W3DGeneralsXCreditDraw( GameWindow *window, WinInstanceData *instData )
+ 	if (TheVersion) {
+ 		ucredit = TheVersion->getUnicodeProjectWatermark();
+ 	} else {
+-		ucredit.translate("GeneralsX - Multiplatform C&C Generals");
++		ucredit.translate("NOVEXA - Powered by GeneralsX (GPL-3.0) - Not affiliated with EA - novexa-jo.com"); // NOVEXA @branding
+ 	}
+ 	instData->setText(ucredit);
+ 
+diff --git a/Generals/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp b/Generals/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp
+index 7b494d4..5a84675 100644
+--- a/Generals/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp
++++ b/Generals/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp
+@@ -403,7 +403,7 @@ static void initLabelVersion()
+ 	if (TheVersion) {
+ 		creditText = TheVersion->getUnicodeProjectWatermark();
+ 	} else {
+-		creditText.translate("GeneralsX - Multiplatform C&C Generals");
++		creditText.translate("NOVEXA - Powered by GeneralsX (GPL-3.0) - Not affiliated with EA - novexa-jo.com"); // NOVEXA @branding
+ 	}
+ 
+ 	if (labelVersion)
+diff --git a/Generals/Code/Main/SDL3Main.cpp b/Generals/Code/Main/SDL3Main.cpp
+index 5b011c9..1142d21 100644
+--- a/Generals/Code/Main/SDL3Main.cpp
++++ b/Generals/Code/Main/SDL3Main.cpp
+@@ -241,7 +241,7 @@ int main(int argc, char* argv[])
+ 	__argv = argv;
+ 
+ 	fprintf(stderr, "=================================================\n");
+-	fprintf(stderr, " Command & Conquer Generals (Linux)\n");
++	fprintf(stderr, " NOVEXA Classic (modified GeneralsX engine, GPL-3.0)\n");
+ 	fprintf(stderr, " SDL3 + DXVK Build\n");
+ 	fprintf(stderr, "=================================================\n\n");
+ 
+@@ -309,7 +309,7 @@ int main(int argc, char* argv[])
+ 			windowFlags |= SDL_WINDOW_HIGH_PIXEL_DENSITY;
+ #endif
+ 			TheSDL3Window = SDL_CreateWindow(
+-				"Command & Conquer Generals",
++				"NOVEXA Classic",  // NOVEXA @branding: no EA trademark in the modified program's window title
+ 				1024, 768,  // Default resolution
+ 				windowFlags
+ 			);
+diff --git a/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp b/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp
+index e90dc38..87f3baa 100644
+--- a/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp
++++ b/GeneralsMD/Code/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/MainMenu.cpp
+@@ -461,7 +461,7 @@ static void initLabelVersion()
+ 	if (TheVersion) {
+ 		creditText = TheVersion->getUnicodeProjectWatermark();
+ 	} else {
+-		creditText.translate("GeneralsX - Multiplatform C&C Generals");
++		creditText.translate("NOVEXA - Powered by GeneralsX (GPL-3.0) - Not affiliated with EA - novexa-jo.com"); // NOVEXA @branding
+ 	}
+ 
+ 	if (labelVersion)
+diff --git a/GeneralsMD/Code/Main/SDL3Main.cpp b/GeneralsMD/Code/Main/SDL3Main.cpp
+index 578b703..f434637 100644
+--- a/GeneralsMD/Code/Main/SDL3Main.cpp
++++ b/GeneralsMD/Code/Main/SDL3Main.cpp
+@@ -241,7 +241,7 @@ int main(int argc, char* argv[])
+ 	__argv = argv;
+ 
+ 	fprintf(stderr, "=================================================\n");
+-	fprintf(stderr, " Command & Conquer Generals: Zero Hour (Linux)\n");
++	fprintf(stderr, " NOVEXA ZH (modified GeneralsX engine, GPL-3.0)\n");
+ 	fprintf(stderr, " SDL3 + DXVK Build\n");
+ 	fprintf(stderr, "=================================================\n\n");
+ 
+@@ -323,7 +323,7 @@ int main(int argc, char* argv[])
+ 		windowFlags |= SDL_WINDOW_HIGH_PIXEL_DENSITY;
+ #endif
+ 		TheSDL3Window = SDL_CreateWindow(
+-			"Command & Conquer Generals: Zero Hour",
++			"NOVEXA ZH",  // NOVEXA @branding: no EA trademark in the modified program's window title
+ 			1024, 768,  // Default resolution
+ 			windowFlags
+ 		);

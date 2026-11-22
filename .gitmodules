@@ -1,0 +1,6 @@
+[submodule "engine/upstream/GeneralsX"]
+	path = engine/upstream/GeneralsX
+	url = https://github.com/fbraz3/GeneralsX.git
+[submodule "server/upstream/GeneralsOnlineGameServer"]
+	path = server/upstream/GeneralsOnlineGameServer
+	url = https://github.com/generalsx-project/GeneralsOnlineGameServer.git
